@@ -5,13 +5,13 @@
 {
     .editor
     {
-        box-sizing: border-box;
+        height: auto;
 
         .fakeHovered&
         {
             /* browser default focus style */
-            outline: auto 0.2rem highlight;
-            outline: auto 0.5rem -webkit-focus-ring-color;
+            outline: auto 2px highlight;
+            outline: auto 5px -webkit-focus-ring-color;
         }
     }
 }
@@ -34,14 +34,24 @@
 
 
 
+
+
+
+
 :global
 {
     .CodeMirror
     {
-        height:         auto;
+        box-sizing:     border-box;
+        height:         100%;
 
         font-family:    monospace, sans-serif;
         font-size:      var( --typo-3 );
         line-height:    var( --line-height-m );
+    }
+
+    .CodeMirror-scroll
+    {
+        overscroll-behavior-y:  contain;
     }
 }

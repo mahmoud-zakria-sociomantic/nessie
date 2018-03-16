@@ -2,19 +2,25 @@
 
 .default
 {
-    position:           relative;
-    display:            table; /* flex doesn’t work here */
+    position:               relative;
+    display:                table; /* flex doesn’t work here */
 
-    width:              auto;
+    width:                  auto;
 
-    padding:            0;
+    padding:                0;
 
-    border:             none;
-    border-radius:      0.2rem;
+    border:                 none;
+    border-radius:          2px;
 
-    background:         transparent;
-    cursor:             pointer;
-    text-transform:     uppercase;
+    background:             transparent;
+    cursor:                 pointer;
+
+    .iconContainer
+    {
+        display:            flex;
+        justify-content:    center;
+        align-items:        center;
+    }
 }
 
 
@@ -26,7 +32,7 @@
     display:            flex;
     justify-content:    center;
     align-items:        center;
-    height:             4rem; /************ replace with min-, or remove? */
+    height:             40px;
     padding:            0 var( --spacing-2 );
     text-align:         center;
 }
@@ -36,9 +42,8 @@
 {
     @extend %Nessie-SemiBold;
 
-    font-size:          var( --typo-2 );
+    font-size:          var( --typo-3 );
     line-height:        var( --line-height-s );
-    letter-spacing:     0.04rem;
 
     overflow:           hidden;
     text-overflow:      ellipsis;
@@ -55,7 +60,8 @@
 
     .iconContainer
     {
-        margin-left:    var( --spacing-1 );
+        margin-left:    4px; /* space between icon and text */
+        margin-right:   -var( --spacing-1 ); /* half of content padding */
     }
 }
 
@@ -64,7 +70,8 @@
 {
     .iconContainer
     {
-        margin-right:   var( --spacing-1 );
+        margin-right:   4px; /* space between icon and text */
+        margin-left:    -var( --spacing-1 ); /* half of content padding */
     }
 }
 
@@ -77,7 +84,7 @@
     &.fakeHovered,
     &:hover
     {
-        background:     var( --PC-BLUE--DARK );
+        background:     var( --PC-BLUE--L10);
         color:          var( --PC-WHITE );
     }
 }
@@ -91,7 +98,7 @@
     &.fakeHovered,
     &:hover
     {
-        background:     var( --PC-GREY--L70 );
+        background:     var( --PC-GREY--L75 );
         color:          var( --PC-GREY--L25 );
     }
 
@@ -124,7 +131,7 @@
     &.fakeHovered,
     &:hover
     {
-        background: var( --PC-GREEN--DARK );
+        background: var( --PC-GREEN--L10 );
         color:      var( --PC-WHITE );
     }
 }
@@ -138,21 +145,7 @@
     &.fakeHovered,
     &:hover
     {
-        background: var( --PC-RED--DARK );
-        color:      var( --PC-WHITE );
-    }
-}
-
-
-.role__warning
-{
-    background:     var( --PC-ORANGE );
-    color:          var( --PC-WHITE );
-
-    &.fakeHovered,
-    &:hover
-    {
-        background: var( --PC-ORANGE--DARK );
+        background: var( --PC-RED--L10 );
         color:      var( --PC-WHITE );
     }
 }
@@ -165,29 +158,11 @@
 
     .content
     {
-        min-width:      7rem;
-
-        border-radius:  1.5rem;
-        border:         0.1rem solid var( --PC-BLUE );
+        height:         30px;
+        border-radius:  20px;
+        border:         1px solid var( --PC-BLUE );
 
         box-sizing:     border-box;
-    }
-
-    &.fakeHovered,
-    &:hover
-    {
-        color:          var( --PC-WHITE );
-
-        .content
-        {
-            background: var( --PC-BLUE );
-        }
-
-        .icon
-        {
-            fill:       var( --PC-WHITE );
-            color:      var( --PC-WHITE );
-        }
     }
 
     .icon
@@ -283,6 +258,7 @@
     &.role__secondary
     {
         color:      var( --PC-GREY--L55 );
+        background: var( --PC-WHITE );
 
         .icon
         {
@@ -315,18 +291,6 @@
         }
     }
 
-    &.role__warning
-    {
-        background: var( --PC-ORANGE--LIGHT );
-        color:      var( --PC-ORANGE--L25 );
-
-        .icon
-        {
-            fill:   color( var( --PC-RED ) tint( 25% ) );
-            color:  color( var( --PC-RED ) tint( 25% ) );
-        }
-    }
-
     &.role__subtle
     {
         color:              var( --PC-BLUE--L40 );
@@ -334,7 +298,7 @@
         .content
         {
             background:     var( --PC-WHITE );
-            border-color:   var( --PC-BLUE--LIGHT );
+            border-color:   var( --PC-BLUE--L40 );
         }
 
         .icon

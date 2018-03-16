@@ -1,132 +1,62 @@
-import React                from 'react';
-import PropTypes            from 'prop-types';
+import React              from 'react';
+import PropTypes          from 'prop-types';
 
-import Css                  from '../hoc/Css';
+import { buildClassName } from '../utils';
+import styles             from './icon.css';
+
 
 const Icon = ( {
     children,
-    className = '',
+    className,
     cssMap,
     forceHover,
-    theme,
     isDisabled,
     label,
     onMouseOut,
     onMouseOver,
     size,
-    type,
-    variant  } ) =>
+    theme,
+    type
+} ) =>
 {
     let xLink;
-    let needsVariant = false;
 
-    const statusIconArray = [
-        'alert',
-        'approved',
-        'declined',
-        'ended',
-        'error',
-        'pending'
-    ];
-
-    if ( statusIconArray.indexOf( type ) >= 0 )
+    if ( type !== 'none' )
     {
-        needsVariant = true;
-        xLink        = `#icon__${type}-${variant}`;
-    }
-    else
-    {
-        xLink        = `#icon__${type}`;
+        xLink = `#icon__${type}`;
     }
 
     return (
-        <Css
-            cssMap   = { cssMap }
-            cssProps = { { size,
-                type,
-                theme,
-                variant     : needsVariant && variant,
-                disabled    : isDisabled,
+        <svg
+            className = { buildClassName( className, cssMap, {
                 fakeHovered : !isDisabled && forceHover,
-            } }>
-
-            <svg
-                className      = { className }
-                aria-label     = { children || label }
-                onMouseOver    = { onMouseOver }
-                onMouseOut     = { onMouseOut }>
-                <use xlinkHref = { xLink } />
-            </svg>
-        </Css>
+                disabled    : isDisabled,
+                theme,
+                type,
+                size,
+            } ) }
+            aria-label  = { children || label }
+            onMouseOut  = { onMouseOut }
+            onMouseOver = { onMouseOver }>
+            { xLink && <use xlinkHref = { xLink } /> }
+        </svg>
     );
 };
 
 Icon.propTypes =
 {
     /**
-     *  Icon size
+     * Icon label (overrides label prop)
      */
-    size : PropTypes.oneOf( [
-        'S',
-        'M',
-        'L',
-        'XL',
-        'XXL'
-    ] ),
+    children    : PropTypes.node,
     /**
-     *  Icon theme
+     *  CSS class name
      */
-    theme : PropTypes.oneOf( [
-        'light',
-        'dark',
-        'control',
-        'button',
-        'navigation'
-    ] ),
+    className   : PropTypes.string,
     /**
-     *  Icon to show
+     *  CSS class map
      */
-    type : PropTypes.oneOf( [
-        'account',
-        'add',
-        'calendar',
-        'close',
-        'delete',
-        'down',
-        'download',
-        'duplicate',
-        'edit',
-        'info',
-        'inspect',
-        'left',
-        'link',
-        'preview',
-        'reset',
-        'right',
-        'search',
-        'up',
-        'upload',
-        'validation',
-        'alert',
-        'approved',
-        'declined',
-        'ended',
-        'error',
-        'pending',
-        'show',
-        'hide'
-    ] ),
-    /**
-    *  Icon variant to show
-    */
-    variant : PropTypes.oneOf( [
-        'fill',
-        'stroke'
-    ] ),
-    /**
-     * Icon label
-     */
-    label       : PropTypes.string,
+    cssMap      : PropTypes.objectOf( PropTypes.string ),
     /**
      * Display as hover when required from another component
      */
@@ -136,24 +66,98 @@ Icon.propTypes =
      */
     isDisabled  : PropTypes.bool,
     /**
+     * Icon label
+     */
+    label       : PropTypes.string,
+    /**
+     *  onMouseOut callback function: ( e ) = { ... }
+     */
+    onMouseOut  : PropTypes.func,
+    /**
      *  onMouseOver callback function: ( e ) = { ... }
      */
     onMouseOver : PropTypes.func,
     /**
-     *  onMouseOut callback function: ( e ) = { ... }
+     *  Icon size
      */
-    onMouseOut  : PropTypes.func
-
+    size        : PropTypes.oneOf( [ 'S', 'M', 'L', 'XL', 'XXL' ] ),
+    /**
+     *  Icon theme
+     */
+    theme       : PropTypes.oneOf( [
+        'light',
+        'dark',
+        'control',
+        'button',
+        'navigation',
+    ] ),
+    /**
+     *  Icon to show
+     */
+    type : PropTypes.oneOf( [
+        'account',
+        'add',
+        'add-circle',
+        'alert',
+        'approved',
+        'bell',
+        'board',
+        'calendar',
+        'close-circle',
+        'close-thick',
+        'close',
+        'dash',
+        'dashboard',
+        'declined',
+        'delete',
+        'down',
+        'download',
+        'duplicate',
+        'edit-circle',
+        'edit',
+        'ended',
+        'error',
+        'file',
+        'graph',
+        'hide',
+        'info',
+        'inspect',
+        'left',
+        'lightbulb',
+        'link',
+        'megaphone',
+        'options',
+        'pending',
+        'preview',
+        'puzzle-piece',
+        'reset',
+        'right',
+        'search',
+        'show',
+        'star-stroke',
+        'star',
+        'swap',
+        'table',
+        'up',
+        'upload',
+        'validation',
+        'none',
+    ] )
 };
 
 Icon.defaultProps =
 {
-    size       : 'S',
-    theme      : 'light',
-    forceHover : false,
-    isDisabled : false,
-    variant    : 'fill',
-    cssMap     : require( './icon.css' )
+    children    : undefined,
+    className   : undefined,
+    cssMap      : styles,
+    forceHover  : false,
+    isDisabled  : false,
+    label       : undefined,
+    onMouseOut  : undefined,
+    onMouseOver : undefined,
+    size        : 'S',
+    theme       : 'light',
+    type        : 'none'
 };
 
 export default Icon;

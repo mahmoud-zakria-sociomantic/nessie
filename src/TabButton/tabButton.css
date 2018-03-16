@@ -2,16 +2,17 @@
 
 .default
 {
-    margin:             0 0 -0.1rem 0;
+    margin:             0 0 -1px 0;
     color:              var( --PC-GREY--L70 ) ;
 
     border-radius:      0;
+    border-bottom:      1px solid transparent;
 
     text-transform:     none;
 
     &:last-child
     {
-        margin-bottom: -0.1rem; /* overrides base rule */
+        margin-bottom: -1px; /* overrides base rule */
     }
 
     &:not(:last-child)
@@ -43,7 +44,7 @@
 .active
 {
     color:          var( --PC-BLUE );
-    border-bottom:  0.1rem solid var( --PC-BLUE );
+    border-bottom:  1px solid var( --PC-BLUE );
     pointer-events: none;
     cursor:         default;
 }
