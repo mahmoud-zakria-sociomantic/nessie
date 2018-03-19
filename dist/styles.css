@@ -915,7 +915,7 @@ legend.label__default + *
         fill:                       #69829e;
     }
 
-:not(.icon__theme__button).icon__type__info, :not(.icon__theme__button).icon__type__running
+:not(.icon__theme__button).icon__type__running
     {
         color:                      #19a2e2;
         fill:                       #19a2e2;
@@ -3484,7 +3484,7 @@ textarea.inputField__resizable
 .CodeMirror {
       /* Set height, width, borders, and global font properties here */
       font-family: monospace;
-      height: 30px;
+      height: 300px;
       color: black;
     }
 
@@ -11688,11 +11688,6 @@ only used in type__carousel for now
         background-color:  #f3fafd;
     }
 
-.navItem__role__primary > .navItem__link
-    {
-        text-transform: uppercase;
-    }
-
 .navItem__role__sub
 {
     border-radius:         6px;
@@ -12069,7 +12064,7 @@ only used in type__carousel for now
     width:              100%;
     height:             auto;
 
-    min-width:          124px;
+    min-width:          1024px;
     min-height:         100vh;
 
     margin:             0;
@@ -12206,7 +12201,7 @@ only used in type__carousel for now
 
 .pageContent__content
 {
-    width:         124px;
+    width:         1024px;
 
     -webkit-box-sizing:    border-box;
 
