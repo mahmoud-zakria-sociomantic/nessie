@@ -9261,12 +9261,13 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  56px;
     font-size:      24px;
     line-height:    32px;
+    color:          #42566e;
     letter-spacing: 0.5px;
 }
 
 .h1__role__default
 {
-    color:  #42566e;
+
 }
 
 .h1__role__subtle
@@ -9360,12 +9361,13 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  32px;
     font-size:      20px;
     line-height:    32px;
+    color:          #42566e;
     letter-spacing: 0.5px;
 }
 
 .h2__role__default
 {
-    color:  #42566e;
+
 }
 
 .h2__role__subtle
@@ -9459,12 +9461,13 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  16px;
     font-size:      16px;
     line-height:    32px;
+    color:          #42566e;
     letter-spacing: 0.2px;
 }
 
 .h3__role__default
 {
-    color:  #42566e;
+
 }
 
 .h3__role__subtle
@@ -9558,12 +9561,13 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  16px;
     font-size:      14px;
     line-height:    32px;
+    color:          #42566e;
     letter-spacing: 0;
 }
 
 .h4__role__default
 {
-    color:  #42566e;
+
 }
 
 .h4__role__subtle
@@ -10893,6 +10897,11 @@ span.CodeMirror-selectedtext { background: none; }
 
             box-shadow:     0 4px 10px 0 rgba(89, 116, 148, 0.1);
 }
+
+.module__default .module__default .module__header:after
+    {
+        display:   none;
+    }
 
 .module__default .module__default + .module__default
     {
