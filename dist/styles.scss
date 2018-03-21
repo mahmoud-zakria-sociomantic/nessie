@@ -1902,8 +1902,8 @@ textarea.inputField__default
 .inputField__error
 {
     border-color:   #ff5460 !important; /* yes, always override other states */
-    -webkit-box-shadow:     0 0 0 1px #ff5460;
-            box-shadow:     0 0 0 1px #ff5460;
+    -webkit-box-shadow:     0 0 0 1px #ff5460 !important;
+            box-shadow:     0 0 0 1px #ff5460 !important; /* yes, always override other states */
     color:          #ff5460 !important; /* yes, always override other states */
 }
 
@@ -16547,11 +16547,6 @@ only used in type__carousel for now
         {
             right:  0;
         }
-
-.valuedTextInput__default:hover .valuedTextInput__valueLabel
-    {
-        border-color: #19a2e2;
-    }
 
 .valuedTextInput__position__left .valuedTextInput__container
     {

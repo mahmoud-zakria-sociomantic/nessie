@@ -27311,14 +27311,11 @@ var ValuedTextInput = function (_Component) {
         var _this = _possibleConstructorReturn(this, (ValuedTextInput.__proto__ || Object.getPrototypeOf(ValuedTextInput)).call(this, props));
 
         _this.state = _extends({}, _this.state, {
-            isFocused: false,
-            isHovered: false
+            isFocused: false
         });
 
         _this.handleFocus = _this.handleFocus.bind(_this);
         _this.handleBlur = _this.handleBlur.bind(_this);
-        _this.handleMouseOver = _this.handleMouseOver.bind(_this);
-        _this.handleMouseOut = _this.handleMouseOut.bind(_this);
         return _this;
     }
 
@@ -27343,26 +27340,6 @@ var ValuedTextInput = function (_Component) {
             }
         }
     }, {
-        key: 'handleMouseOver',
-        value: function handleMouseOver(e) {
-            var onMouseOver = this.props.onMouseOver;
-
-            this.setState({ isHovered: true });
-            if (onMouseOver) {
-                onMouseOver(e);
-            }
-        }
-    }, {
-        key: 'handleMouseOut',
-        value: function handleMouseOut(e) {
-            var onMouseOut = this.props.onMouseOut;
-
-            this.setState({ isHovered: false });
-            if (onMouseOut) {
-                onMouseOut(e);
-            }
-        }
-    }, {
         key: 'render',
         value: function render() {
             var _props = this.props,
@@ -27380,8 +27357,7 @@ var ValuedTextInput = function (_Component) {
                 valueLabelPosition = props.valueLabelPosition;
             var _state = this.state,
                 id = _state.id,
-                isFocused = _state.isFocused,
-                isHovered = _state.isHovered;
+                isFocused = _state.isFocused;
 
 
             var alignText = textAlign;
@@ -27398,7 +27374,7 @@ var ValuedTextInput = function (_Component) {
                         disabled: isDisabled,
                         error: hasError,
                         position: valueLabelPosition,
-                        fakeHovered: forceHover || isFocused || isHovered
+                        fakeHovered: forceHover || isFocused
                     } },
                 _react2.default.createElement(
                     _InputContainer2.default,

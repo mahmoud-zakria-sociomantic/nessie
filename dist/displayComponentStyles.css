@@ -1902,8 +1902,8 @@ textarea.inputField__default__BgAmO
 .inputField__error__YlIU3
 {
     border-color:   #ff5460 !important; /* yes, always override other states */
-    -webkit-box-shadow:     0 0 0 1px #ff5460;
-            box-shadow:     0 0 0 1px #ff5460;
+    -webkit-box-shadow:     0 0 0 1px #ff5460 !important;
+            box-shadow:     0 0 0 1px #ff5460 !important; /* yes, always override other states */
     color:          #ff5460 !important; /* yes, always override other states */
 }
 
@@ -16547,11 +16547,6 @@ only used in type__carousel for now
         {
             right:  0;
         }
-
-.valuedTextInput__default__3aCux:hover .valuedTextInput__valueLabel__6keAU
-    {
-        border-color: #19a2e2;
-    }
 
 .valuedTextInput__position__left__H2ikf .valuedTextInput__container__JuRoR
     {
