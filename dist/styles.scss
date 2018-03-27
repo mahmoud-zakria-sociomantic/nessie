@@ -9966,30 +9966,29 @@ span.CodeMirror-selectedtext { background: none; }
             outline:    none;
         }
 
-.flounderDropdown__main > .flounderDropdown__default .flounderDropdown__search
-        {
-            position:       absolute;
-            top:            0;
+.flounderDropdown__default .flounderDropdown__main > .flounderDropdown__search
+    {
+        position:       absolute;
+        top:            0;
 
-            -webkit-box-sizing:     border-box;
+        -webkit-box-sizing:     border-box;
 
-                    box-sizing:     border-box;
-            width:          100%;
-            height:         100%;
+                box-sizing:     border-box;
+        width:          100%;
+        height:         100%;
 
-            text-indent:    16px;
+        text-indent:    16px;
+    }
 
-        }
-
-.flounderDropdown__multiTagList > .flounderDropdown__default .flounderDropdown__search
-        {
-            -webkit-box-flex:           1;
-            -webkit-flex:           1 0 0%;
-                -ms-flex:           1 0 0%;
-                    flex:           1 0 0%;
-            min-width:      5ch;
-            text-indent:    8px;
-        }
+.flounderDropdown__default .flounderDropdown__multiTagList > .flounderDropdown__search
+    {
+        -webkit-box-flex:           1;
+        -webkit-flex:           1 0 0%;
+            -ms-flex:           1 0 0%;
+                flex:           1 0 0%;
+        min-width:      5ch;
+        text-indent:    8px;
+    }
 
 .flounderDropdown__default .flounderDropdown__multiTagList
     {
