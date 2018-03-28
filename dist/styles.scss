@@ -1514,11 +1514,6 @@ legend.label__default + *
         margin-bottom:  0;
     }
 
-.iconWithTooltip__icon
-{
-    background:     #ffffff;
-}
-
 .iconWithTooltip__iconVisible > .iconWithTooltip__iconWithTooltip
     {
         display:    block;
@@ -2944,7 +2939,7 @@ textarea.inputField__resizable
 .button__disabled.button__role__secondary
     {
         color:      #afbccb;
-        background: #ffffff;
+        background: transparent;
     }
 
 .button__disabled.button__role__secondary .button__icon
@@ -15134,7 +15129,7 @@ only used in type__carousel for now
 .tabButton__disabled.tabButton__role__secondary
     {
         color:      #afbccb;
-        background: #ffffff;
+        background: transparent;
     }
 
 .tabButton__disabled.tabButton__role__secondary .tabButton__icon
@@ -16262,6 +16257,12 @@ only used in type__carousel for now
     width:  100%;
 }
 
+.uploader__loading .uploader__uploaderButton, .uploader__uploaded .uploader__uploaderButton
+    {
+        border-top-right-radius:    0;
+        border-bottom-right-radius: 0;
+    }
+
 .uploader__loading .uploader__iconWithTooltip, .uploader__uploaded .uploader__iconWithTooltip
     {
         display:    block;
@@ -16337,15 +16338,17 @@ only used in type__carousel for now
 
 .uploader__uploadedButton
 {
-    -webkit-box-flex:                   0;
-    -webkit-flex:                   0 0 auto;
-        -ms-flex:                   0 0 auto;
-            flex:                   0 0 auto;
-    width:                  32px;
-    height:                 32px;
-    padding:                0;
-    border:                 none;
-    background-color:       #19a2e2;
+    -webkit-box-flex:                       0;
+    -webkit-flex:                       0 0 auto;
+        -ms-flex:                       0 0 auto;
+            flex:                       0 0 auto;
+    width:                      40px;
+    height:                     40px;
+    padding:                    0;
+    border:                     none;
+    background-color:           #19a2e2;
+    border-top-right-radius:    2px;
+    border-bottom-right-radius: 2px;
 }
 
 .uploader__uploadedButton:focus
@@ -16366,23 +16369,25 @@ only used in type__carousel for now
 
 .uploader__loadingOverlay
 {
-    display:            -webkit-inline-box;
-    display:            -webkit-inline-flex;
-    display:            -ms-inline-flexbox;
-    display:            inline-flex;
-    -webkit-box-align:        center;
-    -webkit-align-items:        center;
-        -ms-flex-align:        center;
-            align-items:        center;
-    -webkit-box-pack:    center;
-    -webkit-justify-content:    center;
-        -ms-flex-pack:    center;
-            justify-content:    center;
-    position:           relative;
-    width:              32px;
-    height:             32px;
-    background-color:   #19a2e2;
-    vertical-align:     top;
+    display:                    -webkit-inline-box;
+    display:                    -webkit-inline-flex;
+    display:                    -ms-inline-flexbox;
+    display:                    inline-flex;
+    -webkit-box-align:                center;
+    -webkit-align-items:                center;
+        -ms-flex-align:                center;
+            align-items:                center;
+    -webkit-box-pack:            center;
+    -webkit-justify-content:            center;
+        -ms-flex-pack:            center;
+            justify-content:            center;
+    position:                   relative;
+    min-width:                  40px;
+    height:                     40px;
+    background-color:           #19a2e2;
+    vertical-align:             top;
+    border-top-right-radius:    2px;
+    border-bottom-right-radius: 2px;
 }
 
 .uploader__loadingOverlay:focus
