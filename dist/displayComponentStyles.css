@@ -458,6 +458,11 @@ template {
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .inputContainer__default__tWiVT
 {
     position:       relative;
@@ -603,6 +608,11 @@ template {
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .text__default__1j9VQ
 {
     position:       relative;
@@ -634,6 +644,8 @@ template {
     font-size:      14px;
     line-height:    24px;
     letter-spacing: 0;
+
+    text-transform: none;
 }
 
 .text__default__1j9VQ .text__default__1j9VQ
@@ -654,7 +666,7 @@ template {
 
 .text__role__subtle__KLxp4
 {
-    color:  var(--GS-5);
+    color:  #42566e;
 }
 
 .text__role__promoted__1467X
@@ -708,7 +720,7 @@ template {
 .label__default__1KHiG
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -720,6 +732,11 @@ template {
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .label__default__1KHiG
@@ -817,6 +834,11 @@ legend.label__default__1KHiG + *
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .icon__default__2QQBA
@@ -1156,6 +1178,11 @@ legend.label__default__1KHiG + *
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .iconButton__default__XPmOq
 {
     position:       relative;
@@ -1258,6 +1285,11 @@ legend.label__default__1KHiG + *
 }
 
 :root
+{
+    /* default box shadow */
+}
+
+:root
 { /* 5px */ /* 5px */
 }
 
@@ -1289,6 +1321,8 @@ legend.label__default__1KHiG + *
     border-radius:      2px;
 
     background-color:   #19a2e2;
+    -webkit-box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
     z-index:            100;
 }
@@ -1642,6 +1676,11 @@ legend.label__default__1KHiG + *
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textInputWithIcon__default__2JGx9
 {
     position:       relative;
@@ -1756,25 +1795,25 @@ legend.label__default__1KHiG + *
     font-style: normal;
 }
 
-.inputField__default__BgAmO::-webkit-input-placeholder
+.inputField__default__BgAmO::-webkit-input-placeholder, .inputField__disabled__2qccD::-webkit-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
-.inputField__default__BgAmO:-ms-input-placeholder
+.inputField__default__BgAmO:-ms-input-placeholder, .inputField__disabled__2qccD:-ms-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
-.inputField__default__BgAmO::placeholder
+.inputField__default__BgAmO::placeholder, .inputField__disabled__2qccD::placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -1785,6 +1824,11 @@ legend.label__default__1KHiG + *
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .inputField__default__BgAmO
@@ -1845,17 +1889,17 @@ legend.label__default__1KHiG + *
 
 .inputField__default__BgAmO::-webkit-input-placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default__BgAmO:-ms-input-placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default__BgAmO::placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default__BgAmO:focus
@@ -1912,6 +1956,21 @@ textarea.inputField__default__BgAmO
 .inputField__disabled__2qccD:focus
     {
         border-color:   #c7d0db;
+    }
+
+.inputField__disabled__2qccD::-webkit-input-placeholder
+    {
+        color:         #98a8bc;
+    }
+
+.inputField__disabled__2qccD:-ms-input-placeholder
+    {
+        color:         #98a8bc;
+    }
+
+.inputField__disabled__2qccD::placeholder
+    {
+        color:         #98a8bc;
     }
 
 .inputField__align__left__1_7G7
@@ -2007,6 +2066,11 @@ textarea.inputField__resizable__2CfEu
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .dropdown__default__13IF5
 {
     position:       relative;
@@ -2033,16 +2097,18 @@ textarea.inputField__resizable__2CfEu
     min-width:  0;
     max-width:  none;
 
-    border:     1px solid #c7d0db;
-    -webkit-box-shadow: 0 4px 10px 0 rgba(89, 116, 148, 0.1);
-            box-shadow: 0 4px 10px 0 rgba(89, 116, 148, 0.1);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
     background: #ffffff;
+
+    border-radius: 2px;
 }
 
 .dropdown__error__3OWkd
 {
-    border-color:   var(--AC-RED);
+    border-color:   #ff5460;
 }
 
 .dropdown__padding__S__1mOx-
@@ -2491,6 +2557,11 @@ textarea.inputField__resizable__2CfEu
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .spinner__default__3HVrD
 {
     position:       relative;
@@ -2675,6 +2746,11 @@ textarea.inputField__resizable__2CfEu
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .button__default__3AXUD
@@ -3072,6 +3148,11 @@ textarea.inputField__resizable__2CfEu
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .fieldset__default__1Eptt
 {
     position:       relative;
@@ -3201,6 +3282,11 @@ textarea.inputField__resizable__2CfEu
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .checkbox__default__pbnFv
@@ -3429,6 +3515,11 @@ textarea.inputField__resizable__2CfEu
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .codeEditor__default__3XMrR
@@ -3937,6 +4028,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .column__default__-UCFq
@@ -8149,6 +8245,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .listBoxOption__default__DkyAr
 {
     display:            -webkit-box;
@@ -8268,7 +8369,7 @@ span.CodeMirror-selectedtext { background: none; }
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -8279,6 +8380,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .listBoxOptionGroup__default__3m1i2
@@ -8351,10 +8457,10 @@ span.CodeMirror-selectedtext { background: none; }
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
-.datePicker__default__12lfM .datePicker__calendarHeader__QSM7u
+.comboBox__dropdownPlaceholder__2wui7
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-family: Nessie-RegularIt, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -8366,6 +8472,75 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
+}
+
+.comboBox__default__1lSPi
+{
+
+}
+
+.comboBox__dropdownPlaceholder__2wui7
+{
+
+    color:  #c7d0db;
+}
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
+{
+    /* primary colors */
+
+
+
+    /* greyscale colors */
+
+
+    /* bluescale colors */
+
+    /* redscale colors */
+
+    /* orangescale colors */
+
+    /* yellowscale colors */
+
+    /* limescale colors */
+
+    /* greenscale colors */
+
+    /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.datePicker__default__12lfM .datePicker__calendarHeader__QSM7u
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .datePicker__default__12lfM
@@ -8391,7 +8566,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePicker__default__12lfM
 {
-    width:          auto;
+    width:          320px;
 }
 
 .datePicker__default__12lfM .datePicker__calendarHeader__QSM7u
@@ -8423,14 +8598,12 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePicker__default__12lfM table
     {
+        width:              100%;
+
         padding-top:        24px;
         padding-right:      8px;
         padding-bottom:     16px;
         padding-left:       8px;
-
-        border-left:        solid 1px var(----PC-GREY--L70);
-        border-bottom:      solid 1px var(----PC-GREY--L70);
-        border-right:       solid 1px var(----PC-GREY--L70);
     }
 
 .datePicker__default__12lfM td
@@ -8477,6 +8650,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .datePickerItem__default__NsQ-o
@@ -8544,23 +8722,11 @@ span.CodeMirror-selectedtext { background: none; }
         line-height:            16px;
     }
 
-.datePickerItem__default__NsQ-o:hover
+.datePickerItem__default__NsQ-o.datePickerItem__fakeHovered__2dLSs, .datePickerItem__default__NsQ-o:hover
     {
-        border-color:   #19a2e2;
-        background:     #ffffff;
-        color:          var(--GS-2);
+        border-color:   #f3fafd;
+        background:     #f3fafd;
     }
-
-.datePickerItem__default__NsQ-o.datePickerItem__fakeHovered__2dLSs, .datePickerItem__default__NsQ-o:focus, .datePickerItem__default__NsQ-o:hover
-    {
-        border-color:   #19a2e2;
-        background:     #ffffff;
-    }
-
-.datePickerItem__default__NsQ-o.datePickerItem__fakeHovered__2dLSs .datePickerItem__text__1UBr5, .datePickerItem__default__NsQ-o:focus .datePickerItem__text__1UBr5, .datePickerItem__default__NsQ-o:hover .datePickerItem__text__1UBr5
-        {
-            color:      var(--GS-2);
-        }
 
 .datePickerItem__type__day__3jUV1
 {
@@ -8589,28 +8755,16 @@ span.CodeMirror-selectedtext { background: none; }
         margin-bottom:      1px;
     }
 
-.datePickerItem__selected__1MAEA
+.datePickerItem__selected__1MAEA, .datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs, .datePickerItem__selected__1MAEA:focus, .datePickerItem__selected__1MAEA:hover
 {
     border-color:   #19a2e2;
     background:     #19a2e2;
-
 }
 
-.datePickerItem__selected__1MAEA .datePickerItem__text__1UBr5
+.datePickerItem__selected__1MAEA .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:focus .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:hover .datePickerItem__text__1UBr5
     {
         color:      #ffffff;
     }
-
-.datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs, .datePickerItem__selected__1MAEA:focus, .datePickerItem__selected__1MAEA:hover
-    {
-        background:     rgb(60, 176, 230);
-        border-color:   rgb(60, 176, 230);
-    }
-
-.datePickerItem__selected__1MAEA.datePickerItem__fakeHovered__2dLSs .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:focus .datePickerItem__text__1UBr5, .datePickerItem__selected__1MAEA:hover .datePickerItem__text__1UBr5
-        {
-            color:      #ffffff;
-        }
 
 .datePickerItem__disabled__1-zmu, .datePickerItem__disabled__1-zmu.datePickerItem__fakeHovered__2dLSs, .datePickerItem__disabled__1-zmu:focus, .datePickerItem__disabled__1-zmu:hover
 {
@@ -8655,6 +8809,20 @@ span.CodeMirror-selectedtext { background: none; }
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
+.datePickerHeader__default__3hHMY .datePickerHeader__year__3-0Rm
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.datePickerHeader__default__3hHMY .datePickerHeader__date__bZ3Dw
+{
+    font-family: Nessie-Light, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root
 {
     /*  TYPOGRAPHY SIZES */
@@ -8665,16 +8833,24 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .datePickerHeader__default__3hHMY
 {
-    position:            relative;
+    position:                   relative;
 
-    padding-top:         24px;
-    padding-right:       24px;
-    padding-bottom:      16px;
-    padding-left:        24px;
+    padding-top:                24px;
+    padding-right:              24px;
+    padding-bottom:             16px;
+    padding-left:               24px;
 
-    background-color:    #19a2e2;
+    background-color:           #19a2e2;
+
+    border-top-left-radius:     2px;
+    border-top-right-radius:    2px;
 }
 
 .datePickerHeader__default__3hHMY .datePickerHeader__date__bZ3Dw
@@ -8768,6 +8944,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .timeInput__default__35iky
@@ -8887,6 +9068,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .divider__default__3CKl9
 {
     position:       relative;
@@ -8953,7 +9139,7 @@ span.CodeMirror-selectedtext { background: none; }
 .dragNDrop__message__1VqXX
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -8965,6 +9151,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .dragNDrop__default__3ASR4
@@ -9105,6 +9296,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .form__default__16h5S
 {
     position:       relative;
@@ -9215,7 +9411,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h1__default__OCMje
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9227,6 +9423,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h1__default__OCMje
@@ -9314,8 +9515,8 @@ span.CodeMirror-selectedtext { background: none; }
 
 .h2__default__3XBD-
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9327,6 +9528,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h2__default__3XBD-
@@ -9357,7 +9563,7 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  32px;
     font-size:      20px;
     line-height:    32px;
-    color:          #42566e;
+    color:          #4b627d;
     letter-spacing: 0.5px;
 }
 
@@ -9415,7 +9621,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h3__default__22-Rs
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9427,6 +9633,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h3__default__22-Rs
@@ -9515,7 +9726,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h4__default__3y7ay
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9527,6 +9738,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h4__default__3y7ay
@@ -9619,11 +9835,11 @@ span.CodeMirror-selectedtext { background: none; }
     font-style: normal;
 }
 
-.flounderDropdown__default__2X8Az .flounderDropdown__header__2gOzt
+.flounderDropdown__default__2X8Az .flounderDropdown__main__1pUya.flounderDropdown__disabled__1uXeV .flounderDropdown__selectedDisplayed__2cJMJ[data-value=""], .flounderDropdown__default__2X8Az .flounderDropdown__selectedDisplayed__2cJMJ[data-value=""], .flounderDropdown__default__2X8Az .flounderDropdown__header__2gOzt
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .flounderDropdown__default__2X8Az .flounderDropdown__multipleSelectTag__i3YNn
@@ -9641,6 +9857,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .flounderDropdown__default__2X8Az
@@ -9734,6 +9955,12 @@ span.CodeMirror-selectedtext { background: none; }
             opacity:        0.5;
         }
 
+.flounderDropdown__default__2X8Az .flounderDropdown__main__1pUya.flounderDropdown__disabled__1uXeV .flounderDropdown__selectedDisplayed__2cJMJ[data-value=""]
+            {
+
+                color:  #98a8bc;
+            }
+
 .flounderDropdown__default__2X8Az .flounderDropdown__main__1pUya.flounderDropdown__disabled__1uXeV.flounderDropdown__multipleTag__Wyhq7
         {
             background:         #ffffff;
@@ -9752,9 +9979,9 @@ span.CodeMirror-selectedtext { background: none; }
         padding-top:    8px;
         padding-bottom: 8px;
 
-        -webkit-box-shadow:     0 5px 10px #cfd7e0;
+        -webkit-box-shadow:     0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
-                box-shadow:     0 5px 10px #cfd7e0;
+                box-shadow:     0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
         background:     #ffffff;
 
@@ -9802,6 +10029,12 @@ span.CodeMirror-selectedtext { background: none; }
             display:    none;
         }
 
+.flounderDropdown__default__2X8Az .flounderDropdown__selectedDisplayed__2cJMJ[data-value=""]
+        {
+
+            color:  #c7d0db;
+        }
+
 .flounderDropdown__default__2X8Az .flounderDropdown__multipleTag__Wyhq7 .flounderDropdown__selectedDisplayed__2cJMJ
         {
             position:       absolute;
@@ -9810,7 +10043,7 @@ span.CodeMirror-selectedtext { background: none; }
             left:           0;
             right:          0;
 
-            min-height:     48px;
+            min-height:     40px;
 
             padding-top:    12px;
             padding-bottom: 12px;
@@ -10013,9 +10246,9 @@ span.CodeMirror-selectedtext { background: none; }
                 box-sizing:         border-box;
 
         width:              100%;
-        min-height:         46px;
+        min-height:         38px;
 
-        padding-top:        7px;
+        padding-top:        3px;
         padding-right:      40px;
         padding-left:       8px;
     }
@@ -10023,7 +10256,7 @@ span.CodeMirror-selectedtext { background: none; }
 .flounderDropdown__default__2X8Az .flounderDropdown__multiTagList__1AXbD > *
         {
             margin-right:   8px;
-            margin-bottom:  7px;
+            margin-bottom:  3px;
         }
 
 .flounderDropdown__default__2X8Az .flounderDropdown__multiTagList__1AXbD > *:last-child
@@ -10490,6 +10723,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .grid__default__1hhZ1
 {
     position:       relative;
@@ -10753,6 +10991,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .messageBox__default__3hsFC
 {
     position:       relative;
@@ -10847,6 +11090,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .module__default__3sx3E
@@ -10953,7 +11201,7 @@ span.CodeMirror-selectedtext { background: none; }
             display:            inline-block;
             width:              50px;
             height:             3px;
-            background-color:   #42566e;
+            background-color:   #4b627d;
         }
 
 .module__default__3sx3E .module__content__1TqqO
@@ -11118,7 +11366,7 @@ span.CodeMirror-selectedtext { background: none; }
 .modalDialog__title__1o8rG
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -11130,6 +11378,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .visualTesting .modalContainer
@@ -11206,12 +11459,12 @@ span.CodeMirror-selectedtext { background: none; }
     padding:            40px;
     -webkit-box-sizing:         border-box;
             box-sizing:         border-box;
-    -webkit-box-shadow:         0 2px 20px 0 rgba(54, 70, 90, 0.3);
-            box-shadow:         0 2px 20px 0 rgba(54, 70, 90, 0.3);
+    -webkit-box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background:         #ffffff;
     text-align:         left;
     z-index:            9999;
-    border-radius:      5px;
+    border-radius:      4px;
 }
 
 .modalDialog__type__carousel__3yqH8 .modalDialog__content__nBCdB
@@ -11367,6 +11620,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navList__default__2JZBI
 {
     position:       relative;
@@ -11491,6 +11749,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navBar__default__1EAbA
 {
     position:       relative;
@@ -11573,6 +11836,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navDropdown__default__2crMa /* extends NavList css */
 {
     width:                  auto;
@@ -11640,6 +11908,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .navItem__default__kwc7o
@@ -11848,6 +12121,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .nessieLogo__default__29T4w
 {
     position:       relative;
@@ -11913,6 +12191,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .notificationBar__default__lNNgQ
@@ -12039,6 +12322,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .page__default__1F0MF
@@ -12190,6 +12478,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageContent__default__2xCEE
 {
     position:       relative;
@@ -12323,6 +12616,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageContentHeader__default__3_CVb
 {
     padding:    0 30px;
@@ -12413,6 +12711,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageHeader__default__3zPHF
 {
     position:       relative;
@@ -12485,6 +12788,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .pageFooter__default__2jvKK
@@ -12568,7 +12876,7 @@ only used in type__carousel for now
 .paginator__pageButton__1W4o8, .paginator__ellipsis__2AnFD
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -12580,6 +12888,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .paginator__default__2tWDo
@@ -12748,6 +13061,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .passwordInput__default__1KJw4
 {
     position:       relative;
@@ -12812,6 +13130,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .progressBar__default__11kkQ
@@ -12905,6 +13228,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .spinner__default__3HVrD
@@ -13079,7 +13407,7 @@ only used in type__carousel for now
 .progressIndicator__percentage__3Biz3
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -13091,6 +13419,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .progressIndicator__default__4m5YP
@@ -13239,6 +13572,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .radio__default__1hjqa
@@ -13480,6 +13818,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .section__default__1RKjM
 {
     position:       relative;
@@ -13602,6 +13945,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .slider__default__20oIL
@@ -14038,6 +14386,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .sliderGroup__default__2Y9lA
 {
     position:       relative;
@@ -14205,6 +14558,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .scrollBox__default__GWy-0
 {
     position:       relative;
@@ -14251,14 +14609,26 @@ only used in type__carousel for now
 {
     position:         absolute;
     z-index:          10;
-    background-color: #ffffff;
+    background-color: #19a2e2;
     border-radius:    20px;
-    opacity:          0.8;
+    opacity:          0.4;
+    width:            32px;
+    height:           32px;
 }
 
 .scrollBox__icon__down__29U1k svg, .scrollBox__icon__left__1Wpwq svg, .scrollBox__icon__right__2qnyF svg, .scrollBox__icon__up__mnKCx svg
     {
-        fill:         #19a2e2;
+        fill:         #ffffff;
+    }
+
+.scrollBox__icon__down__29U1k svg:hover, .scrollBox__icon__down__29U1k svg:focus, .scrollBox__icon__left__1Wpwq svg:hover, .scrollBox__icon__left__1Wpwq svg:focus, .scrollBox__icon__right__2qnyF svg:hover, .scrollBox__icon__right__2qnyF svg:focus, .scrollBox__icon__up__mnKCx svg:hover, .scrollBox__icon__up__mnKCx svg:focus
+        {
+            fill:     #ffffff;
+        }
+
+.scrollBox__icon__down__29U1k:hover, .scrollBox__icon__left__1Wpwq:hover, .scrollBox__icon__right__2qnyF:hover, .scrollBox__icon__up__mnKCx:hover
+    {
+        opacity:      1;
     }
 
 .scrollBox__icon__down__29U1k
@@ -14324,6 +14694,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .sorter__default__3a0HN
@@ -14476,6 +14851,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .statusIndicator__default__21UTk
 {
     position:       relative;
@@ -14577,6 +14957,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .switch__default__29KN6
@@ -14865,6 +15250,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tabButton__default__2fot-
@@ -15309,10 +15699,17 @@ only used in type__carousel for now
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
-.tableCell__header__2c3IP, .tableCell__rowHeader__sGb0f
+.tableCell__header__2c3IP
+{
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tableCell__rowHeader__sGb0f
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -15324,6 +15721,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tableCell__default__2dIPU
@@ -15382,15 +15784,17 @@ only used in type__carousel for now
 
 .tableCell__header__2c3IP /* required until we have a TableHeader text component */
 {
-    /* display:        none; */
-
-    /*@media( min-width: $shark )
-    {*/
     display:    -webkit-box;
     display:    -webkit-flex;
     display:    -ms-flexbox;
     display:    flex;
-    /*}*/
+    font-size:          12px;
+    line-height:        24px;
+    letter-spacing:     0.5px;
+    text-transform:     uppercase;
+    text-decoration:    none;
+    color:              #4b627d;
+    cursor:             text;
 }
 
 .tableCell__rowHeader__sGb0f
@@ -15448,6 +15852,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .tableRow__default__15hF0
 {
 
@@ -15501,6 +15910,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .table__default__fpQba
@@ -15582,6 +15996,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tabs__default__3DOQh
@@ -15678,6 +16097,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tag__default__308m5
@@ -15792,21 +16216,21 @@ only used in type__carousel for now
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .tagInput__default__3DPRk .tagInput__input__30zcy:-ms-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .tagInput__default__3DPRk .tagInput__input__30zcy::placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -15817,6 +16241,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tagInput__default__3DPRk
@@ -15863,7 +16292,7 @@ only used in type__carousel for now
         border:             1px solid #c7d0db;
         border-radius:      2px;
 
-        padding-top:        8px;
+        padding-top:        3px;
         padding-right:      8px;
         padding-bottom:     0;
         padding-left:       8px;
@@ -15877,7 +16306,7 @@ only used in type__carousel for now
 .tagInput__default__3DPRk .tagInput__container__4G2gx > *
         {
             margin-right:   8px;
-            margin-bottom:  8px;
+            margin-bottom:  3px;
         }
 
 .tagInput__default__3DPRk .tagInput__input__30zcy
@@ -16016,6 +16445,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textArea__default__Dfi2-
 {
     position:       relative;
@@ -16081,6 +16515,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .textInput__default__9o_HN
@@ -16150,6 +16589,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textInputWithDropdown__default__9ZDoM
 {
     /* nothing to do here */
@@ -16208,6 +16652,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .uploader__default__3Iq-q
@@ -16452,6 +16901,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .valuedTextInput__default__3aCux
 {
     position:       relative;
@@ -16625,13 +17079,7 @@ only used in type__carousel for now
     {
         background:     #eef1f4;
         border-color:   #c7d0db;
-        color:          #d7dde5;
         pointer-events: none;
     }
-
-.valuedTextInput__disabled__3CMPp .valuedTextInput__valueLabel__6keAU::before, .valuedTextInput__disabled__3CMPp .valuedTextInput__valueLabel__6keAU::after
-        {
-            background: #d7dde5;
-        }
 
 /*# sourceMappingURL=displayComponentStyles.css.map*/

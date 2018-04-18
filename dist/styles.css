@@ -458,6 +458,11 @@ template {
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .inputContainer__default
 {
     position:       relative;
@@ -603,6 +608,11 @@ template {
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .text__default
 {
     position:       relative;
@@ -634,6 +644,8 @@ template {
     font-size:      14px;
     line-height:    24px;
     letter-spacing: 0;
+
+    text-transform: none;
 }
 
 .text__default .text__default
@@ -654,7 +666,7 @@ template {
 
 .text__role__subtle
 {
-    color:  var(--GS-5);
+    color:  #42566e;
 }
 
 .text__role__promoted
@@ -708,7 +720,7 @@ template {
 .label__default
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -720,6 +732,11 @@ template {
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .label__default
@@ -817,6 +834,11 @@ legend.label__default + *
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .icon__default
@@ -1156,6 +1178,11 @@ legend.label__default + *
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .iconButton__default
 {
     position:       relative;
@@ -1258,6 +1285,11 @@ legend.label__default + *
 }
 
 :root
+{
+    /* default box shadow */
+}
+
+:root
 { /* 5px */ /* 5px */
 }
 
@@ -1289,6 +1321,8 @@ legend.label__default + *
     border-radius:      2px;
 
     background-color:   #19a2e2;
+    -webkit-box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
     z-index:            100;
 }
@@ -1642,6 +1676,11 @@ legend.label__default + *
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textInputWithIcon__default
 {
     position:       relative;
@@ -1756,25 +1795,25 @@ legend.label__default + *
     font-style: normal;
 }
 
-.inputField__default::-webkit-input-placeholder
+.inputField__default::-webkit-input-placeholder, .inputField__disabled::-webkit-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
-.inputField__default:-ms-input-placeholder
+.inputField__default:-ms-input-placeholder, .inputField__disabled:-ms-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
-.inputField__default::placeholder
+.inputField__default::placeholder, .inputField__disabled::placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -1785,6 +1824,11 @@ legend.label__default + *
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .inputField__default
@@ -1845,17 +1889,17 @@ legend.label__default + *
 
 .inputField__default::-webkit-input-placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default:-ms-input-placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default::placeholder
     {
-        color:         #d7dde5;
+        color:         #c7d0db;
     }
 
 .inputField__default:focus
@@ -1912,6 +1956,21 @@ textarea.inputField__default
 .inputField__disabled:focus
     {
         border-color:   #c7d0db;
+    }
+
+.inputField__disabled::-webkit-input-placeholder
+    {
+        color:         #98a8bc;
+    }
+
+.inputField__disabled:-ms-input-placeholder
+    {
+        color:         #98a8bc;
+    }
+
+.inputField__disabled::placeholder
+    {
+        color:         #98a8bc;
     }
 
 .inputField__align__left
@@ -2007,6 +2066,11 @@ textarea.inputField__resizable
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .dropdown__default
 {
     position:       relative;
@@ -2033,16 +2097,18 @@ textarea.inputField__resizable
     min-width:  0;
     max-width:  none;
 
-    border:     1px solid #c7d0db;
-    -webkit-box-shadow: 0 4px 10px 0 rgba(89, 116, 148, 0.1);
-            box-shadow: 0 4px 10px 0 rgba(89, 116, 148, 0.1);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
     background: #ffffff;
+
+    border-radius: 2px;
 }
 
 .dropdown__error
 {
-    border-color:   var(--AC-RED);
+    border-color:   #ff5460;
 }
 
 .dropdown__padding__S
@@ -2491,6 +2557,11 @@ textarea.inputField__resizable
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .spinner__default
 {
     position:       relative;
@@ -2675,6 +2746,11 @@ textarea.inputField__resizable
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .button__default
@@ -3072,6 +3148,11 @@ textarea.inputField__resizable
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .fieldset__default
 {
     position:       relative;
@@ -3201,6 +3282,11 @@ textarea.inputField__resizable
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .checkbox__default
@@ -3429,6 +3515,11 @@ textarea.inputField__resizable
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .codeEditor__default
@@ -3937,6 +4028,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .column__default
@@ -8149,6 +8245,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .listBoxOption__default
 {
     display:            -webkit-box;
@@ -8268,7 +8369,7 @@ span.CodeMirror-selectedtext { background: none; }
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -8279,6 +8380,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .listBoxOptionGroup__default
@@ -8351,10 +8457,10 @@ span.CodeMirror-selectedtext { background: none; }
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
-.datePicker__default .datePicker__calendarHeader
+.comboBox__dropdownPlaceholder
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-family: Nessie-RegularIt, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -8366,6 +8472,75 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
+}
+
+.comboBox__default
+{
+
+}
+
+.comboBox__dropdownPlaceholder
+{
+
+    color:  #c7d0db;
+}
+/*----------------------------------------------------------------------------//
+//    $color definitions
+//----------------------------------------------------------------------------*/
+
+:root
+{
+    /* primary colors */
+
+
+
+    /* greyscale colors */
+
+
+    /* bluescale colors */
+
+    /* redscale colors */
+
+    /* orangescale colors */
+
+    /* yellowscale colors */
+
+    /* limescale colors */
+
+    /* greenscale colors */
+
+    /* navyscale colors */
+}
+
+/*------------------------------------//
+//    $FONT DEFINITIONS
+//------------------------------------*/
+
+.datePicker__default .datePicker__calendarHeader
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root
+{
+    /*  TYPOGRAPHY SIZES */
+}
+
+:root
+{
+    /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .datePicker__default
@@ -8391,7 +8566,7 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePicker__default
 {
-    width:          auto;
+    width:          320px;
 }
 
 .datePicker__default .datePicker__calendarHeader
@@ -8423,14 +8598,12 @@ span.CodeMirror-selectedtext { background: none; }
 
 .datePicker__default table
     {
+        width:              100%;
+
         padding-top:        24px;
         padding-right:      8px;
         padding-bottom:     16px;
         padding-left:       8px;
-
-        border-left:        solid 1px var(----PC-GREY--L70);
-        border-bottom:      solid 1px var(----PC-GREY--L70);
-        border-right:       solid 1px var(----PC-GREY--L70);
     }
 
 .datePicker__default td
@@ -8477,6 +8650,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .datePickerItem__default
@@ -8544,23 +8722,11 @@ span.CodeMirror-selectedtext { background: none; }
         line-height:            16px;
     }
 
-.datePickerItem__default:hover
+.datePickerItem__default.datePickerItem__fakeHovered, .datePickerItem__default:hover
     {
-        border-color:   #19a2e2;
-        background:     #ffffff;
-        color:          var(--GS-2);
+        border-color:   #f3fafd;
+        background:     #f3fafd;
     }
-
-.datePickerItem__default.datePickerItem__fakeHovered, .datePickerItem__default:focus, .datePickerItem__default:hover
-    {
-        border-color:   #19a2e2;
-        background:     #ffffff;
-    }
-
-.datePickerItem__default.datePickerItem__fakeHovered .datePickerItem__text, .datePickerItem__default:focus .datePickerItem__text, .datePickerItem__default:hover .datePickerItem__text
-        {
-            color:      var(--GS-2);
-        }
 
 .datePickerItem__type__day
 {
@@ -8589,28 +8755,16 @@ span.CodeMirror-selectedtext { background: none; }
         margin-bottom:      1px;
     }
 
-.datePickerItem__selected
+.datePickerItem__selected, .datePickerItem__selected.datePickerItem__fakeHovered, .datePickerItem__selected:focus, .datePickerItem__selected:hover
 {
     border-color:   #19a2e2;
     background:     #19a2e2;
-
 }
 
-.datePickerItem__selected .datePickerItem__text
+.datePickerItem__selected .datePickerItem__text, .datePickerItem__selected.datePickerItem__fakeHovered .datePickerItem__text, .datePickerItem__selected:focus .datePickerItem__text, .datePickerItem__selected:hover .datePickerItem__text
     {
         color:      #ffffff;
     }
-
-.datePickerItem__selected.datePickerItem__fakeHovered, .datePickerItem__selected:focus, .datePickerItem__selected:hover
-    {
-        background:     rgb(60, 176, 230);
-        border-color:   rgb(60, 176, 230);
-    }
-
-.datePickerItem__selected.datePickerItem__fakeHovered .datePickerItem__text, .datePickerItem__selected:focus .datePickerItem__text, .datePickerItem__selected:hover .datePickerItem__text
-        {
-            color:      #ffffff;
-        }
 
 .datePickerItem__disabled, .datePickerItem__disabled.datePickerItem__fakeHovered, .datePickerItem__disabled:focus, .datePickerItem__disabled:hover
 {
@@ -8655,6 +8809,20 @@ span.CodeMirror-selectedtext { background: none; }
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
+.datePickerHeader__default .datePickerHeader__year
+{
+    font-family: Nessie-Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.datePickerHeader__default .datePickerHeader__date
+{
+    font-family: Nessie-Light, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root
 {
     /*  TYPOGRAPHY SIZES */
@@ -8665,16 +8833,24 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .datePickerHeader__default
 {
-    position:            relative;
+    position:                   relative;
 
-    padding-top:         24px;
-    padding-right:       24px;
-    padding-bottom:      16px;
-    padding-left:        24px;
+    padding-top:                24px;
+    padding-right:              24px;
+    padding-bottom:             16px;
+    padding-left:               24px;
 
-    background-color:    #19a2e2;
+    background-color:           #19a2e2;
+
+    border-top-left-radius:     2px;
+    border-top-right-radius:    2px;
 }
 
 .datePickerHeader__default .datePickerHeader__date
@@ -8768,6 +8944,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .timeInput__default
@@ -8887,6 +9068,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .divider__default
 {
     position:       relative;
@@ -8953,7 +9139,7 @@ span.CodeMirror-selectedtext { background: none; }
 .dragNDrop__message
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -8965,6 +9151,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .dragNDrop__default
@@ -9105,6 +9296,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .form__default
 {
     position:       relative;
@@ -9215,7 +9411,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h1__default
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9227,6 +9423,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h1__default
@@ -9314,8 +9515,8 @@ span.CodeMirror-selectedtext { background: none; }
 
 .h2__default
 {
-    font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9327,6 +9528,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h2__default
@@ -9357,7 +9563,7 @@ span.CodeMirror-selectedtext { background: none; }
     margin-bottom:  32px;
     font-size:      20px;
     line-height:    32px;
-    color:          #42566e;
+    color:          #4b627d;
     letter-spacing: 0.5px;
 }
 
@@ -9415,7 +9621,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h3__default
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9427,6 +9633,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h3__default
@@ -9515,7 +9726,7 @@ span.CodeMirror-selectedtext { background: none; }
 .h4__default
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -9527,6 +9738,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .h4__default
@@ -9619,11 +9835,11 @@ span.CodeMirror-selectedtext { background: none; }
     font-style: normal;
 }
 
-.flounderDropdown__default .flounderDropdown__header
+.flounderDropdown__default .flounderDropdown__main.flounderDropdown__disabled .flounderDropdown__selectedDisplayed[data-value=""], .flounderDropdown__default .flounderDropdown__selectedDisplayed[data-value=""], .flounderDropdown__default .flounderDropdown__header
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .flounderDropdown__default .flounderDropdown__multipleSelectTag
@@ -9641,6 +9857,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .flounderDropdown__default
@@ -9734,6 +9955,12 @@ span.CodeMirror-selectedtext { background: none; }
             opacity:        0.5;
         }
 
+.flounderDropdown__default .flounderDropdown__main.flounderDropdown__disabled .flounderDropdown__selectedDisplayed[data-value=""]
+            {
+
+                color:  #98a8bc;
+            }
+
 .flounderDropdown__default .flounderDropdown__main.flounderDropdown__disabled.flounderDropdown__multipleTag
         {
             background:         #ffffff;
@@ -9752,9 +9979,9 @@ span.CodeMirror-selectedtext { background: none; }
         padding-top:    8px;
         padding-bottom: 8px;
 
-        -webkit-box-shadow:     0 5px 10px #cfd7e0;
+        -webkit-box-shadow:     0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
-                box-shadow:     0 5px 10px #cfd7e0;
+                box-shadow:     0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
         background:     #ffffff;
 
@@ -9802,6 +10029,12 @@ span.CodeMirror-selectedtext { background: none; }
             display:    none;
         }
 
+.flounderDropdown__default .flounderDropdown__selectedDisplayed[data-value=""]
+        {
+
+            color:  #c7d0db;
+        }
+
 .flounderDropdown__default .flounderDropdown__multipleTag .flounderDropdown__selectedDisplayed
         {
             position:       absolute;
@@ -9810,7 +10043,7 @@ span.CodeMirror-selectedtext { background: none; }
             left:           0;
             right:          0;
 
-            min-height:     48px;
+            min-height:     40px;
 
             padding-top:    12px;
             padding-bottom: 12px;
@@ -10013,9 +10246,9 @@ span.CodeMirror-selectedtext { background: none; }
                 box-sizing:         border-box;
 
         width:              100%;
-        min-height:         46px;
+        min-height:         38px;
 
-        padding-top:        7px;
+        padding-top:        3px;
         padding-right:      40px;
         padding-left:       8px;
     }
@@ -10023,7 +10256,7 @@ span.CodeMirror-selectedtext { background: none; }
 .flounderDropdown__default .flounderDropdown__multiTagList > *
         {
             margin-right:   8px;
-            margin-bottom:  7px;
+            margin-bottom:  3px;
         }
 
 .flounderDropdown__default .flounderDropdown__multiTagList > *:last-child
@@ -10490,6 +10723,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .grid__default
 {
     position:       relative;
@@ -10753,6 +10991,11 @@ span.CodeMirror-selectedtext { background: none; }
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .messageBox__default
 {
     position:       relative;
@@ -10847,6 +11090,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .module__default
@@ -10953,7 +11201,7 @@ span.CodeMirror-selectedtext { background: none; }
             display:            inline-block;
             width:              50px;
             height:             3px;
-            background-color:   #42566e;
+            background-color:   #4b627d;
         }
 
 .module__default .module__content
@@ -11118,7 +11366,7 @@ span.CodeMirror-selectedtext { background: none; }
 .modalDialog__title
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -11130,6 +11378,11 @@ span.CodeMirror-selectedtext { background: none; }
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .visualTesting .modalContainer
@@ -11206,12 +11459,12 @@ span.CodeMirror-selectedtext { background: none; }
     padding:            40px;
     -webkit-box-sizing:         border-box;
             box-sizing:         border-box;
-    -webkit-box-shadow:         0 2px 20px 0 rgba(54, 70, 90, 0.3);
-            box-shadow:         0 2px 20px 0 rgba(54, 70, 90, 0.3);
+    -webkit-box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            box-shadow:         0 2px 4px 0 rgba(0, 0, 0, 0.5);
     background:         #ffffff;
     text-align:         left;
     z-index:            9999;
-    border-radius:      5px;
+    border-radius:      4px;
 }
 
 .modalDialog__type__carousel .modalDialog__content
@@ -11367,6 +11620,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navList__default
 {
     position:       relative;
@@ -11491,6 +11749,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navBar__default
 {
     position:       relative;
@@ -11573,6 +11836,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .navDropdown__default /* extends NavList css */
 {
     width:                  auto;
@@ -11640,6 +11908,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .navItem__default
@@ -11848,6 +12121,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .nessieLogo__default
 {
     position:       relative;
@@ -11913,6 +12191,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .notificationBar__default
@@ -12039,6 +12322,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .page__default
@@ -12190,6 +12478,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageContent__default
 {
     position:       relative;
@@ -12323,6 +12616,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageContentHeader__default
 {
     padding:    0 30px;
@@ -12413,6 +12711,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .pageHeader__default
 {
     position:       relative;
@@ -12485,6 +12788,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .pageFooter__default
@@ -12568,7 +12876,7 @@ only used in type__carousel for now
 .paginator__pageButton, .paginator__ellipsis
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -12580,6 +12888,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .paginator__default
@@ -12748,6 +13061,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .passwordInput__default
 {
     position:       relative;
@@ -12812,6 +13130,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .progressBar__default
@@ -12905,6 +13228,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .spinner__default
@@ -13079,7 +13407,7 @@ only used in type__carousel for now
 .progressIndicator__percentage
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -13091,6 +13419,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .progressIndicator__default
@@ -13239,6 +13572,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .radio__default
@@ -13480,6 +13818,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .section__default
 {
     position:       relative;
@@ -13602,6 +13945,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .slider__default
@@ -14038,6 +14386,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .sliderGroup__default
 {
     position:       relative;
@@ -14205,6 +14558,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .scrollBox__default
 {
     position:       relative;
@@ -14251,14 +14609,26 @@ only used in type__carousel for now
 {
     position:         absolute;
     z-index:          10;
-    background-color: #ffffff;
+    background-color: #19a2e2;
     border-radius:    20px;
-    opacity:          0.8;
+    opacity:          0.4;
+    width:            32px;
+    height:           32px;
 }
 
 .scrollBox__icon__down svg, .scrollBox__icon__left svg, .scrollBox__icon__right svg, .scrollBox__icon__up svg
     {
-        fill:         #19a2e2;
+        fill:         #ffffff;
+    }
+
+.scrollBox__icon__down svg:hover, .scrollBox__icon__down svg:focus, .scrollBox__icon__left svg:hover, .scrollBox__icon__left svg:focus, .scrollBox__icon__right svg:hover, .scrollBox__icon__right svg:focus, .scrollBox__icon__up svg:hover, .scrollBox__icon__up svg:focus
+        {
+            fill:     #ffffff;
+        }
+
+.scrollBox__icon__down:hover, .scrollBox__icon__left:hover, .scrollBox__icon__right:hover, .scrollBox__icon__up:hover
+    {
+        opacity:      1;
     }
 
 .scrollBox__icon__down
@@ -14324,6 +14694,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .sorter__default
@@ -14476,6 +14851,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .statusIndicator__default
 {
     position:       relative;
@@ -14577,6 +14957,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .switch__default
@@ -14865,6 +15250,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tabButton__default
@@ -15309,10 +15699,17 @@ only used in type__carousel for now
 //    $FONT DEFINITIONS
 //------------------------------------*/
 
-.tableCell__header, .tableCell__rowHeader
+.tableCell__header
+{
+    font-family: Nessie-SemiBold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tableCell__rowHeader
 {
     font-family: Nessie-Bold, sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -15324,6 +15721,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tableCell__default
@@ -15382,15 +15784,17 @@ only used in type__carousel for now
 
 .tableCell__header /* required until we have a TableHeader text component */
 {
-    /* display:        none; */
-
-    /*@media( min-width: $shark )
-    {*/
     display:    -webkit-box;
     display:    -webkit-flex;
     display:    -ms-flexbox;
     display:    flex;
-    /*}*/
+    font-size:          12px;
+    line-height:        24px;
+    letter-spacing:     0.5px;
+    text-transform:     uppercase;
+    text-decoration:    none;
+    color:              #4b627d;
+    cursor:             text;
 }
 
 .tableCell__rowHeader
@@ -15448,6 +15852,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .tableRow__default
 {
 
@@ -15501,6 +15910,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .table__default
@@ -15582,6 +15996,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tabs__default
@@ -15678,6 +16097,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tag__default
@@ -15792,21 +16216,21 @@ only used in type__carousel for now
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .tagInput__default .tagInput__input:-ms-input-placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 .tagInput__default .tagInput__input::placeholder
 {
     font-family: Nessie-RegularIt, sans-serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 :root
@@ -15817,6 +16241,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .tagInput__default
@@ -15863,7 +16292,7 @@ only used in type__carousel for now
         border:             1px solid #c7d0db;
         border-radius:      2px;
 
-        padding-top:        8px;
+        padding-top:        3px;
         padding-right:      8px;
         padding-bottom:     0;
         padding-left:       8px;
@@ -15877,7 +16306,7 @@ only used in type__carousel for now
 .tagInput__default .tagInput__container > *
         {
             margin-right:   8px;
-            margin-bottom:  8px;
+            margin-bottom:  3px;
         }
 
 .tagInput__default .tagInput__input
@@ -16016,6 +16445,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textArea__default
 {
     position:       relative;
@@ -16081,6 +16515,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .textInput__default
@@ -16150,6 +16589,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .textInputWithDropdown__default
 {
     /* nothing to do here */
@@ -16208,6 +16652,11 @@ only used in type__carousel for now
 :root
 {
     /*  SPACING */
+}
+
+:root
+{
+    /* default box shadow */
 }
 
 .uploader__default
@@ -16452,6 +16901,11 @@ only used in type__carousel for now
     /*  SPACING */
 }
 
+:root
+{
+    /* default box shadow */
+}
+
 .valuedTextInput__default
 {
     position:       relative;
@@ -16625,13 +17079,7 @@ only used in type__carousel for now
     {
         background:     #eef1f4;
         border-color:   #c7d0db;
-        color:          #d7dde5;
         pointer-events: none;
     }
-
-.valuedTextInput__disabled .valuedTextInput__valueLabel::before, .valuedTextInput__disabled .valuedTextInput__valueLabel::after
-        {
-            background: #d7dde5;
-        }
 
 /*# sourceMappingURL=styles.css.map*/
